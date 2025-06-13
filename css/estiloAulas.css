@@ -1,0 +1,31 @@
+body{
+    background-color: aquamarine;
+}
+
+p{
+    color: red;
+}
+
+/* ir buscar todas as tags h1*/
+h1{
+    color: yellow;
+}
+
+/* ir buscar um id chamado  myPar*/
+#myPar{
+    background-color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ir buscar uma class */
+.differentFS{
+    font-size: 100px;
+}
+
+.differentBG{
+    background-color: salmon;
+}
+
+span{
+    background-color: rebeccapurple;
+}
