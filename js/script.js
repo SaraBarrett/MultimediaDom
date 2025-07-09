@@ -51,41 +51,45 @@ function darkMode() {
   }
 }
 
-function changeLisBG(){
+function changeLisBG() {
   //selecionar
-  let myLis = document.getElementsByClassName('toclevel-1');
-  console.log(myLis)
+  let myLis = document.getElementsByClassName("toclevel-1");
+  console.log(myLis);
 
-
-  //alternativa 
+  //alternativa
   //document.querySelectorAll('.toclevel-1');
   //manipular
-  for(let element of myLis){
-    
-    if( element.style.backgroundColor == "green"){
+  for (let element of myLis) {
+    if (element.style.backgroundColor == "green") {
       element.style.backgroundColor = "white";
-    }else{
+    } else {
       element.style.backgroundColor = "green";
     }
   }
-
 }
 
-
-function login(){
+function login() {
   //criar o elemento p e img
-  const newP = document.createElement('p');
-  const newImage = document.createElement('img');
+  const newP = document.createElement("p");
+  const newImage = document.createElement("img");
 
   //no novo paragrafo definir o texto
-  newP.innerText = 'Olá Sara';
-  newImage.src = 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/250px-User_icon_2.svg.png';
+  newP.innerText = "Olá Sara";
+  newImage.src =
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/User_icon_2.svg/250px-User_icon_2.svg.png";
 
   //seleccionar o elemento pai
-  let myParent = document.getElementById('myParent');
+  let myParent = document.getElementById("myParent");
 
   //dar o elemento criado como filho da div
   myParent.appendChild(newP);
   myParent.appendChild(newImage);
+}
 
+function addText() {
+  //seleccionar
+  let myH2 = document.querySelector("h1");
+
+  //manipular
+  myH2.append(" are awesome!");
 }

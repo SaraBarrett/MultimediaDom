@@ -66,3 +66,23 @@ function rainbow() {
   //ajuda
   //element.style.backgroundColor = colors[2];
 }
+
+function createBtns(){
+
+ 
+
+  let i= 1;
+
+  while(i<101){
+  //cria um botão
+    let newB = document.createElement('button');  
+    newB.innerText = 'Botão'+ i;
+
+    //selecciono o pai
+    let myParent = document.getElementById('container');
+    myParent.appendChild(newB);
+      i= i +1;
+  }
+
+
+}
