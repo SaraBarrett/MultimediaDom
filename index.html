@@ -16,10 +16,24 @@
     <button onclick="changeLisBG()">Mudar BG color dos Lis</button>
     <button onclick="login()">Login</button>
     <button onclick="addText()">Adicionar texto</button>
-    <div id="myParent">
+    <div id="myParent"></div>
 
+    <h3>O meu Zoo</h3>
+    <form action="ficheiroparaguardardados">
+      <label for="">Insira o nome de um animal</label>
+      <br />
+      <input type="text" id="animal" />
+      <br />
+      <label for="">Insira o nome da actividade</label>
+      <br />
+      <input type="text" id="activity" />
+      <br />
+      <button type="submit">Submeter</button>
+    </form>
 
-    </div>
+    <h6>Lista de Animais</h6>
+    <ul id="animalsList"></ul>
+
     <h1>Silkie Chickens</h1>
     <a href="/exs/chicken.html">Vai para as galinhas</a>
     <img

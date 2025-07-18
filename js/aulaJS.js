@@ -53,9 +53,9 @@ function rainbow() {
   let mySpans = document.getElementsByTagName("span");
 
   let contador = 0;
-  for(let element of mySpans){
-      element.style.color = colors[contador];
-      contador = contador +1;
+  for (let element of mySpans) {
+    element.style.color = colors[contador];
+    contador = contador + 1;
   }
 
   //no elemento [0] da lista de span colocar colors[0]
@@ -67,22 +67,39 @@ function rainbow() {
   //element.style.backgroundColor = colors[2];
 }
 
-function createBtns(){
+function createBtns() {
+  let i = 1;
 
- 
-
-  let i= 1;
-
-  while(i<101){
-  //cria um botão
-    let newB = document.createElement('button');  
-    newB.innerText = 'Botão'+ i;
+  while (i < 101) {
+    //cria um botão
+    let newB = document.createElement("button");
+    newB.innerText = "Botão" + i;
 
     //selecciono o pai
-    let myParent = document.getElementById('container');
+    let myParent = document.getElementById("container");
     myParent.appendChild(newB);
-      i= i +1;
+    i = i + 1;
   }
-
-
 }
+
+let myBtn = document.getElementById("hello");
+
+myBtn.addEventListener("mouseout", function () {
+  alert("evento mouseout!");
+});
+
+myBtn.addEventListener("click", function (event) {
+  console.log(event);
+  alert("evento click!");
+});
+
+
+
+window.addEventListener("keydown", function (event) {
+    if(event.key == 'a'){
+      alert('tecla: '+event.key);
+    }else{
+      alert('teclada errada!')
+    }
+ 
+});

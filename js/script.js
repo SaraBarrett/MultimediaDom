@@ -93,3 +93,22 @@ function addText() {
   //manipular
   myH2.append(" are awesome!");
 }
+
+let myForm = document.querySelector("form");
+myForm.addEventListener("submit", function (event) {
+  //evita o comportamento por defeito
+  event.preventDefault();
+
+  //busca os valores escritos em animal e activity
+  let myInput = document.getElementById("animal").value;
+  let myActivityInput = document.getElementById("activity").value;
+
+  //cria um elemento com os valores inseridos
+  let myLi = document.createElement("li");
+  myLi.innerText = myInput +' e as actividades são '+myActivityInput;
+
+  let myParent = document.getElementById("animalsList");
+  myParent.appendChild(myLi);
+
+  myForm.reset();
+});
